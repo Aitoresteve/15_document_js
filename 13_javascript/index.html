@@ -1,0 +1,32 @@
+<!DOCTYPE htm>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document_js</title>
+    <!-- 2 llibreria ellaçada-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+    </script>
+    <!-- 3 escriure el javascript-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("img").hide(3000);
+            $("p").hide();
+            $("h1").click(function(){
+                $("img").show(3000);
+                $("p").show();
+            });
+            $("p").click(function(){
+                $("img").hide(3000);
+            })
+        });
+    </script>
+    </head>
+    <body>
+        <!-- 1 contingut-->
+        <h1>hola!</h1>
+        <img src="img/Avocado.gif" alt="">
+        <p>adéu</p>
+    </body>
+</html>
